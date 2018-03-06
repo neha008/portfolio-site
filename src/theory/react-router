@@ -1,0 +1,28 @@
+1. we are going to use browser router once to create the new router and we are going to use route for 
+   every single page.
+
+2. we are going to provide things to route like the path we want to match for and what we want to do 
+   when the user visits that path.
+
+3. historyApiFallBack is set to true to tell the dev server that we are going to handle routing via
+   our client side code and that it should return this page(index.html) for all 404 routes.
+
+4. stude about BrowserRouter , Route ,Switch,Link, NavLink  from reacttraining.com/react-router/web/api
+
+5. when react router sees switch it is going to move through your route definition in order 
+   and it is gonna stop when it finds a match ie it will not go to the next line.
+
+6. if we use <a href=""> for link  then if we click on link we are still going to go through 
+   full page refresh that means browser is still communicating with the server in order to
+   get the HTML page back but it does not need to,we have all of that accesible via client 
+   side javascript.React router gives us the component to get that done.
+   It gives us components to create links that use client side routing like Link and NavLink.
+
+7. If you are linking outside your app like if you are linking to a google search  resultor some
+   other external url its perfectly fine to use anchor <a> tagbcoz you are not going to get the 
+   advantages of client side routing anyway.But when we are linking internally in our application
+   we want to make sure to use a Link as opposed to anchor<a> tag in order to take the advantage
+   of client side routing.
+
+8. activeClassName is going to allowus to provide a class.This class is only going to get  applied
+   to the link when we are on that page.
